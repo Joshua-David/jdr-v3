@@ -1,0 +1,72 @@
+.container-fluid {
+    padding: 0;
+    height: 4000px;
+}
+
+#header {
+    background-color: #f7f7f7;
+}
+
+#intro {
+    height: 100vh;
+}
+
+#intro h2 {
+	font-family: 'GTAmerica', sans-serif;
+	font-size: 60px;
+}
+
+#intro span {
+	-webkit-text-fill-color: #f7f7f7;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+} 
+
+
+.tabs {
+	font-family: 'Space Mono', monospace;
+}
+
+#page-one-tab {
+    bottom: 50px;
+    background-color: #ccc;
+    height: 50px;
+}
+
+#page-one-content {
+    height: 1000px;
+    background-color: #ccc;
+}
+
+#page-two-tab {
+    bottom: 0px;
+    background-color: #000;
+    color: #fff;
+    height: 50px;
+}
+
+#page-two-content {
+    height: 1000px;
+    background-color: #000;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.flow-one {
+    position: relative;
+    bottom: 100px!important;
+}
+
+.flow-two {
+    position: relative;
+    bottom: 100px!important;
+}
+
+@font-face {
+  font-family: 'GTAmerica';
+  font-style: normal;
+  font-weight: normal;
+  src: local('GTAmerica'), url('../fonts/GT.otf') format('opentype');
+}
