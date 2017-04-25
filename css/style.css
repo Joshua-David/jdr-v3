@@ -5,68 +5,91 @@
 
 #header {
     background-color: #f7f7f7;
+    z-index: -9;
 }
 
 #intro {
-    height: 100vh;
+    height: 1000px;
 }
 
 #intro h2 {
-	font-family: 'GTAmerica', sans-serif;
-	font-size: 60px;
+    font-family: 'GTAmerica', sans-serif;
+    font-size: 60px;
 }
 
 #intro span {
-	-webkit-text-fill-color: #f7f7f7;
+    margin-left: 100px;
+    -webkit-text-fill-color: #f7f7f7;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #000;
-} 
-
+}
 
 .tabs {
-	font-family: 'Space Mono', monospace;
+    font-family: 'Space Mono', monospace;
+    height: 35px;
+    background-color: #f4f4f4;
+    z-index: -1;
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px#ccc;
+    box-shadow: 0 0 5px #ccc;
+}
+
+
+/*.tabs:before {
+    content: '';
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 5px;
+    z-index: -6;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+}*/
+
+.tabs p {
+    color: #000;
+    padding: 5px 5px;
+}
+
+.content {
+    padding: 5px 5px;
+    background-color: #f4f4f4;
+    z-index: -2;
+    height: 1000px;
 }
 
 #page-one-tab {
-    bottom: 50px;
-    background-color: #ccc;
-    height: 50px;
+    bottom: 105px;
 }
 
-#page-one-content {
-    height: 1000px;
-    background-color: #ccc;
-}
 
 #page-two-tab {
-    bottom: 0px;
-    background-color: #000;
-    color: #fff;
-    height: 50px;
+    bottom: 70px;
 }
 
-#page-two-content {
-    height: 1000px;
-    background-color: #000;
+
+#page-three-tab {
+    bottom: 35px;
+}
+
+
+#page-four-tab {
+    bottom: 0px;
 }
 
 .fixed {
     position: fixed;
 }
 
-.flow-one {
+.flow {
     position: relative;
-    bottom: 100px!important;
-}
-
-.flow-two {
-    position: relative;
-    bottom: 100px!important;
+    bottom: 0!important;
 }
 
 @font-face {
-  font-family: 'GTAmerica';
-  font-style: normal;
-  font-weight: normal;
-  src: local('GTAmerica'), url('../fonts/GT.otf') format('opentype');
+    font-family: 'GTAmerica';
+    font-style: normal;
+    font-weight: normal;
+    src: local('GTAmerica'), url('../fonts/GT.otf') format('opentype');
 }

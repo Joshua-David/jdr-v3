@@ -24,19 +24,31 @@
     <div class="container-fluid">
         <div class="col-xs-12" id="header">
             <div id="intro">
-                <h2>Joshua David <span>digital designer</span></h2>
+                <h2>Joshua David <br /><span>digital designer</span></h2>
             </div>
         </div>
         <div class="col-xs-12 fixed tabs" id="page-one-tab">
-            The Guardian
+            <p>The Guardian</p>
         </div>
-        <div class="col-xs-12" id="page-one-content">
+        <div class="col-xs-12 content" id="page-one-content">
             fill
         </div>
         <div class="col-xs-12 fixed tabs" id="page-two-tab">
-            Google Daydream
+            <p>Google Daydream</p>
         </div>
-        <div class="col-xs-12" id="page-two-content">
+        <div class="col-xs-12 content" id="page-two-content">
+            fill
+        </div>
+        <div class="col-xs-12 fixed tabs" id="page-three-tab">
+           <p>Evenly Distributed</p>
+        </div>
+        <div class="col-xs-12 content" id="page-three-content">
+            fill
+        </div>
+        <div class="col-xs-12 fixed tabs" id="page-four-tab">
+            <p>Conde Nast</p>
+        </div>
+        <div class="col-xs-12 content" id="page-four-content">
             fill
         </div>
     </div>
@@ -51,28 +63,56 @@
             element: document.getElementById('page-one-content'),
             handler: function(direction) {
                 if (direction === 'down') {
-                    $("#page-one-tab").removeClass("fixed").addClass("flow-one");
+                    $("#page-one-tab").removeClass("fixed").addClass("flow");
                 }
 
                 if (direction === 'up') {
-                    $("#page-one-tab").removeClass("flow-one").addClass("fixed");
+                    $("#page-one-tab").removeClass("flow").addClass("fixed");
                 }
             },
-            offset: '100%'
+            offset: '79%'
         })
 
         var waypoint = new Waypoint({
             element: document.getElementById('page-two-content'),
             handler: function(direction) {
                 if (direction === 'down') {
-                    $("#page-two-tab").removeClass("fixed").addClass("flow-two");
+                    $("#page-two-tab").removeClass("fixed").addClass("flow");
                 }
 
                 if (direction === 'up') {
-                    $("#page-two-tab").removeClass("flow-two").addClass("fixed");
+                    $("#page-two-tab").removeClass("flow").addClass("fixed");
                 }
             },
-            offset: '100%'
+            offset: '79%'
+        })
+
+         var waypoint = new Waypoint({
+            element: document.getElementById('page-three-content'),
+            handler: function(direction) {
+                if (direction === 'down') {
+                    $("#page-three-tab").removeClass("fixed").addClass("flow");
+                }
+
+                if (direction === 'up') {
+                    $("#page-three-tab").removeClass("flow").addClass("fixed");
+                }
+            },
+            offset: '79%'
+        })
+
+          var waypoint = new Waypoint({
+            element: document.getElementById('page-four-content'),
+            handler: function(direction) {
+                if (direction === 'down') {
+                    $("#page-four-tab").removeClass("fixed").addClass("flow");
+                }
+
+                if (direction === 'up') {
+                    $("#page-four-tab").removeClass("flow").addClass("fixed");
+                }
+            },
+            offset: '79%'
         })
 
 
